@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clone", "..\01-Clone\Clone\Clone\Clone.csproj", "{2885697C-34E5-4601-9CCF-BA1C2A128829}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Clone", "01-Clone", "{043E15D1-5C8D-455E-BEB2-245BCA559B9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2885697C-34E5-4601-9CCF-BA1C2A128829} = {043E15D1-5C8D-455E-BEB2-245BCA559B9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B672ECC6-D0DC-4EFE-9007-EE641024E73A}
