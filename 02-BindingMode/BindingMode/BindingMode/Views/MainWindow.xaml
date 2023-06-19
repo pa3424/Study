@@ -1,0 +1,108 @@
+﻿<Window x:Class="BindingMode.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Width" Value="200"/>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="10 0 0 0"/>
+        </Style>
+
+        <Style TargetType="{x:Type GroupBox}">
+            <Setter Property="BorderThickness" Value="3"/>
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Content" Value="Input Random Text"/>
+            <Setter Property="Command" Value="{Binding SetRandomTextCommand}"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <UniformGrid Columns="1">
+            <GroupBox>
+                <GroupBox.Header >
+                    <Label Content="TwoWay"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="Test" Text="{Binding TwoWayText, Mode=TwoWay}"/>
+                    <TextBlock Grid.Column="1" Text="{Binding TwoWayText}"/>
+                    <Button Grid.Column="2" CommandParameter="TwoWayText"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox>
+                <GroupBox.Header >
+                    <Label Content="OneWay"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Text="{Binding OneWayText, Mode=OneWay}"/>
+                    <TextBlock Grid.Column="1" Text="{Binding OneWayText}"/>
+                    <Button Grid.Column="2" CommandParameter="OneWayText"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox>
+                <GroupBox.Header >
+                    <Label Content="OneTime"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Text="{Binding OneTimeText, Mode=OneTime}"/>
+                    <TextBlock Grid.Column="1" Text="{Binding OneTimeText}"/>
+                    <Button Grid.Column="2" CommandParameter="OneTimeText"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox>
+                <GroupBox.Header >
+                    <Label Content="OneWayToSource"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Text="{Binding OneWayToSourceText, Mode=OneWayToSource}"/>
+                    <TextBlock Grid.Column="1" Text="{Binding OneWayToSourceText}"/>
+                    <Button Grid.Column="2" CommandParameter="OneWayToSourceText"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox>
+                <GroupBox.Header >
+                    <Label Content="Default"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Text="{Binding DefaultText}"/>
+                    <TextBlock Grid.Column="1" Text="{Binding DefaultText}"/>
+                    <Button Grid.Column="2" CommandParameter="DefaultText"/>
+                </Grid>
+            </GroupBox>
+        </UniformGrid>
+
+    </Grid>
+</Window>
