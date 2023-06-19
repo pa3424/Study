@@ -37,7 +37,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox x:Name="Test" Text="{Binding TwoWayText, Mode=TwoWay}"/>
+                    <TextBox x:Name="Test" Text="{Binding TwoWayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                     <TextBlock Grid.Column="1" Text="{Binding TwoWayText}"/>
                     <Button Grid.Column="2" CommandParameter="TwoWayText"/>
                 </Grid>
@@ -82,7 +82,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Text="{Binding OneWayToSourceText, Mode=OneWayToSource}"/>
+                    <TextBox Text="{Binding OneWayToSourceText, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
                     <TextBlock Grid.Column="1" Text="{Binding OneWayToSourceText}"/>
                     <Button Grid.Column="2" CommandParameter="OneWayToSourceText"/>
                 </Grid>
@@ -97,7 +97,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Text="{Binding DefaultText}"/>
+                    <TextBox Text="{Binding DefaultText, UpdateSourceTrigger=PropertyChanged}"/>
                     <TextBlock Grid.Column="1" Text="{Binding DefaultText}"/>
                     <Button Grid.Column="2" CommandParameter="DefaultText"/>
                 </Grid>

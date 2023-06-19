@@ -21,7 +21,6 @@ namespace BindingMode.ViewModels
 
         private async Task SetRandomText(string text)
         {
-            var properties = text.GetType().GetProperties();
             var randomText = RandomString(new Random().Next(1, 15));
             switch (text)
             {
