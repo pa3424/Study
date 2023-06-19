@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clone", "..\01-Clone\Clone\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Clone", "01-Clone", "{043E15D1-5C8D-455E-BEB2-245BCA559B9E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindingMode", "..\02-BindingMode\BindingMode\BindingMode\BindingMode.csproj", "{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-BindingMode", "02-BindingMode", "{0FFFB668-DCC3-4ADD-A4A5-CBD1DAFD87E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{2885697C-34E5-4601-9CCF-BA1C2A128829}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2885697C-34E5-4601-9CCF-BA1C2A128829}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2885697C-34E5-4601-9CCF-BA1C2A128829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2885697C-34E5-4601-9CCF-BA1C2A128829} = {043E15D1-5C8D-455E-BEB2-245BCA559B9E}
+		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4} = {0FFFB668-DCC3-4ADD-A4A5-CBD1DAFD87E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B672ECC6-D0DC-4EFE-9007-EE641024E73A}
