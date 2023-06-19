@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +53,7 @@ namespace BindingMode.ViewModels
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
+        //	Updates the target property or the property whenever either the target property or the source property changes.
         private string twoWayText = "TwoWay_Example";
         public string TwoWayText
         {
@@ -59,6 +61,7 @@ namespace BindingMode.ViewModels
             set { SetProperty(ref twoWayText, value); }
         }
 
+        // Updates the target property only when the source property changes.
         private string oneWayText = "OneWay_Example";
         public string OneWayText
         {
@@ -66,6 +69,7 @@ namespace BindingMode.ViewModels
             set { SetProperty(ref oneWayText, value); }
         }
 
+        // Updates the target property only when the application starts or when the DataContext undergoes a change.
         private string oneTimeText = "OneTime_Example";
         public string OneTimeText
         {
@@ -73,6 +77,7 @@ namespace BindingMode.ViewModels
             set { SetProperty(ref oneTimeText, value); }
         }
 
+        // Updates the source property when the target property changes.
         private string oneWayToSourceText = "OneWayToSource_Example";
         public string OneWayToSourceText
         {
@@ -80,6 +85,7 @@ namespace BindingMode.ViewModels
             set { SetProperty(ref oneWayToSourceText, value); }
         }
 
+        // Causes the default Mode value of target property to be used.
         private string defaultText = "Default_Example";
         public string DefaultText
         {

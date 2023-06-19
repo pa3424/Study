@@ -37,8 +37,22 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox x:Name="Test" Text="{Binding TwoWayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                    <TextBlock Grid.Column="1" Text="{Binding TwoWayText}"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Target" HorizontalAlignment="Center" Foreground="OrangeRed"/>
+                        <TextBox Grid.Row="1" Text="{Binding TwoWayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </Grid>
+                    <Grid Grid.Column="1" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                            <TextBlock Text="Source" HorizontalAlignment="Center" Foreground="ForestGreen"/>
+                        <TextBlock Text="{Binding TwoWayText}"/>
+                    </Grid>
                     <Button Grid.Column="2" CommandParameter="TwoWayText"/>
                 </Grid>
             </GroupBox>
