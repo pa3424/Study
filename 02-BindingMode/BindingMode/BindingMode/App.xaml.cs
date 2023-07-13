@@ -20,8 +20,7 @@ namespace BindingMode
         {
             Services = ConfigureServices();
 
-            MainWindow mainWindow = null;
-            mainWindow = new MainWindow
+            var mainWindow = new MainWindow
             {
                 WindowStartupLocation = WindowStartupLocation.Manual,
                 WindowState = WindowState.Normal,

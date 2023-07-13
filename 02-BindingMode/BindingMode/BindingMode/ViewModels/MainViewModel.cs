@@ -11,7 +11,7 @@ using System.Windows.Input;
 
 namespace BindingMode.ViewModels
 {
-    public class MainViewModel : ObservableRecipient
+    public class MainViewModel : ObservableRecipient //https://learn.microsoft.com/ko-kr/dotnet/desktop/wpf/data/?view=netdesktop-7.0&redirectedfrom=MSDN
     {
         public ICommand SetRandomTextCommand { get; private set; }
 

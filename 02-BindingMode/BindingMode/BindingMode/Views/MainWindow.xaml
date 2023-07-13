@@ -35,6 +35,7 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -46,7 +47,8 @@
                         <TextBlock Text="Target" Foreground="OrangeRed"/>
                         <TextBox Grid.Row="1" Text="{Binding TwoWayText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                     </Grid>
-                    <Grid Grid.Column="1" >
+                    <Label Grid.Column="1" Content="↔" VerticalAlignment="Center"/>
+                    <Grid Grid.Column="2" >
                         <Grid.RowDefinitions>
                             <RowDefinition Height="0.5*"/>
                             <RowDefinition/>
@@ -54,7 +56,7 @@
                         <TextBlock Text="Source" Foreground="ForestGreen"/>
                         <TextBlock Grid.Row="1" Text="{Binding TwoWayText}"/>
                     </Grid>
-                    <Button Grid.Column="2" CommandParameter="TwoWayText"/>
+                    <Button Grid.Column="3" CommandParameter="TwoWayText"/>
                 </Grid>
             </GroupBox>
             <GroupBox>
@@ -64,12 +66,14 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <TextBox Text="{Binding OneWayText, Mode=OneWay}"/>
-                    <TextBlock Grid.Column="1" Text="{Binding OneWayText}"/>
-                    <Button Grid.Column="2" CommandParameter="OneWayText"/>
+                    <Label Grid.Column="1" Content="←" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="2" Text="{Binding OneWayText}"/>
+                    <Button Grid.Column="3" CommandParameter="OneWayText"/>
                 </Grid>
             </GroupBox>
             <GroupBox>
@@ -79,12 +83,13 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <TextBox Text="{Binding OneTimeText, Mode=OneTime}"/>
-                    <TextBlock Grid.Column="1" Text="{Binding OneTimeText}"/>
-                    <Button Grid.Column="2" CommandParameter="OneTimeText"/>
+                    <TextBlock Grid.Column="2" Text="{Binding OneTimeText}"/>
+                    <Button Grid.Column="3" CommandParameter="OneTimeText"/>
                 </Grid>
             </GroupBox>
             <GroupBox>
@@ -94,12 +99,14 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <TextBox Text="{Binding OneWayToSourceText, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
-                    <TextBlock Grid.Column="1" Text="{Binding OneWayToSourceText}"/>
-                    <Button Grid.Column="2" CommandParameter="OneWayToSourceText"/>
+                    <Label Grid.Column="1" Content="→" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="2" Text="{Binding OneWayToSourceText}"/>
+                    <Button Grid.Column="3" CommandParameter="OneWayToSourceText"/>
                 </Grid>
             </GroupBox>
             <GroupBox>
@@ -109,12 +116,13 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <TextBox Text="{Binding DefaultText, UpdateSourceTrigger=PropertyChanged}"/>
-                    <TextBlock Grid.Column="1" Text="{Binding DefaultText}"/>
-                    <Button Grid.Column="2" CommandParameter="DefaultText"/>
+                    <TextBlock Grid.Column="2" Text="{Binding DefaultText}"/>
+                    <Button Grid.Column="3" CommandParameter="DefaultText"/>
                 </Grid>
             </GroupBox>
         </UniformGrid>
