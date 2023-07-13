@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindingMode", "..\02-Bindin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-BindingMode", "02-BindingMode", "{0FFFB668-DCC3-4ADD-A4A5-CBD1DAFD87E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-BindingUpdateSourceTrigger", "03-BindingUpdateSourceTrigger", "{BA557D00-CD1A-4FDF-A3E9-CCF6CDA5CFAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingUpdateSourceTrigger", "..\03-BindingUpdateSourceTrigger\BindingUpdateSourceTrigger\BindingUpdateSourceTrigger.csproj", "{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2885697C-34E5-4601-9CCF-BA1C2A128829} = {043E15D1-5C8D-455E-BEB2-245BCA559B9E}
 		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4} = {0FFFB668-DCC3-4ADD-A4A5-CBD1DAFD87E3}
+		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B} = {BA557D00-CD1A-4FDF-A3E9-CCF6CDA5CFAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B672ECC6-D0DC-4EFE-9007-EE641024E73A}
