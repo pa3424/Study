@@ -1,9 +1,31 @@
-﻿using Prism.Mvvm;
+﻿using Prism.Commands;
+using Prism.Mvvm;
+using System;
+using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace BindingUpdateSourceTrigger.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
+
+        public ICommand ChangeTextCommand { get; private set; }
+
+        public MainWindowViewModel()
+        {
+            ChangeTextCommand = new DelegateCommand<object>(ChangeText);
+        }
+
+        private void ChangeText(object obj)
+        {
+            var item = obj as TextBox;
+            if (item is null) return;
+
+            var be = item.GetBindingExpression(TextBox.TextProperty);
+            be.UpdateSource();
+        }
+
+        private string lostFocusText;
         private string _title = "UpdateSourceTrigger example";
         public string Title
         {
@@ -11,11 +33,6 @@ namespace BindingUpdateSourceTrigger.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public MainWindowViewModel()
-        {
-        }
-
-        private string lostFocusText;
         public string LostFocusText
         {
             get { return lostFocusText; }

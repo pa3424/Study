@@ -12,11 +12,5 @@ namespace BindingUpdateSourceTrigger.Views
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var be = explicitTextBox.GetBindingExpression(TextBox.TextProperty);
-            be.UpdateSource();
-        }
     }
 }
