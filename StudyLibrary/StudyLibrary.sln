@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.4.33110.190
+VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clone", "..\01-Clone\Clone\Clone\Clone.csproj", "{2885697C-34E5-4601-9CCF-BA1C2A128829}"
 EndProject
@@ -13,7 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-BindingMode", "02-Bindin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-BindingUpdateSourceTrigger", "03-BindingUpdateSourceTrigger", "{BA557D00-CD1A-4FDF-A3E9-CCF6CDA5CFAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingUpdateSourceTrigger", "..\03-BindingUpdateSourceTrigger\BindingUpdateSourceTrigger\BindingUpdateSourceTrigger.csproj", "{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindingUpdateSourceTrigger", "..\03-BindingUpdateSourceTrigger\BindingUpdateSourceTrigger\BindingUpdateSourceTrigger.csproj", "{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-ObservableCollection", "04-ObservableCollection", "{17C5820B-E96F-4DB4-9C59-7FC607704DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableCollection", "..\04-ObservableCollection\ObservableCollection\ObservableCollection.csproj", "{11463EC7-6480-4ECB-A7DE-9955319F48C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11463EC7-6480-4ECB-A7DE-9955319F48C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11463EC7-6480-4ECB-A7DE-9955319F48C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11463EC7-6480-4ECB-A7DE-9955319F48C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11463EC7-6480-4ECB-A7DE-9955319F48C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{2885697C-34E5-4601-9CCF-BA1C2A128829} = {043E15D1-5C8D-455E-BEB2-245BCA559B9E}
 		{7B727E63-B7F5-46CE-BDBA-BAED5C296CF4} = {0FFFB668-DCC3-4ADD-A4A5-CBD1DAFD87E3}
 		{EF46C0A7-8B6A-4AAA-9C2A-0B95B7CA131B} = {BA557D00-CD1A-4FDF-A3E9-CCF6CDA5CFAF}
+		{11463EC7-6480-4ECB-A7DE-9955319F48C3} = {17C5820B-E96F-4DB4-9C59-7FC607704DB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B672ECC6-D0DC-4EFE-9007-EE641024E73A}
