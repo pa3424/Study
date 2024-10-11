@@ -1,0 +1,17 @@
+﻿<Application x:Class="Converter.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:converter="clr-namespace:Converter.Converters"
+             StartupUri="Views/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <converter:BoolToColor WhenTrue="ForestGreen" WhenFalse="OrangeRed" x:Key="Green_Red"/>
+            <converter:BoolToColor WhenTrue="DodgerBlue" WhenFalse="GhostWhite" x:Key="Blue_White"/>
+            <converter:BoolToColor_ThreeColor WhenTrue="Green" WhenNull="Orange" WhenFalse="Red" x:Key="StopLight"/>
+            <converter:BoolToString WhenTrue="Pass" WhenFalse="Fail" x:Key="Pass_Fail"/>
+            <converter:EnumToIdentifier x:Key="EnumToIdentifier"/>
+            <converter:TimeSpanToEachTime x:Key="TimeSpanToEachTime"/>
+            <converter:MultiBinding x:Key="MultiBinding"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
